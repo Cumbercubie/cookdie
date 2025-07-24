@@ -14,3 +14,16 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Features:
+#### Recipe
+#### Tipmoney
+ - CRUD restaurants
+ - Take restaurant food picture
+ - Search restaurant by location, collection, name
+ - Search pictures/restaurants by food name 
+ - Upload pictures to instagram
+ - Sync instagram pictures
+
+#### Restaurant home screen tutorial 
+- home page: https://github.com/indjec/Flutter-Instagram-Profile-UI-Clone/blob/master/lib/screens/profile_base_screen.dart
