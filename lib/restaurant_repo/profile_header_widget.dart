@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget profileHeaderWidget(BuildContext context) {
+  List<
   return Container(
       width: double.infinity,
       decoration: BoxDecoration(color: Colors.white),
@@ -90,13 +91,34 @@ Widget profileHeaderWidget(BuildContext context) {
                 ],
               ),
               SizedBox(),
-              Text(""),
+              Text(
+                "John Doe",
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                  letterSpacing: 0.4,
+                ),
+              ),
               SizedBox(),
-              Text(""),
+              Text(
+                "Lorem Ipsum",
+                style: TextStyle(
+                  letterSpacing: 0.4,
+                ),
+              ),
               SizedBox(),
               actions(context),
               SizedBox(),
-              Container()
+              Container(
+                height: 85,
+                child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: highlightItems.length,
+                    itemBuilder:
+                ),
+              )
             ],
           ),
       )
@@ -106,6 +128,23 @@ Widget profileHeaderWidget(BuildContext context) {
 Widget actions(BuildContext context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [],
+    children: [
+      Expanded(
+          child: OutlinedButton(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                minimumSize: Size(0, 30),
+                side: BorderSide(
+                  color: Colors.grey[400]!,
+                )
+              ),
+              child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: Text("Edit profile", style: TextStyle(color: Colors.black)),
+              ),
+          ),
+      )
+    ],
   );
 }
