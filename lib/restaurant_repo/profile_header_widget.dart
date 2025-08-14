@@ -1,8 +1,8 @@
+import 'package:cookdie/restaurant_repo/add_food_photo_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget profileHeaderWidget(BuildContext context) {
-  List<
   return Container(
       width: double.infinity,
       decoration: BoxDecoration(color: Colors.white),
@@ -110,15 +110,15 @@ Widget profileHeaderWidget(BuildContext context) {
               SizedBox(),
               actions(context),
               SizedBox(),
-              Container(
-                height: 85,
-                child: ListView.builder(
-                    shrinkWrap: true,
-                    scrollDirection: Axis.horizontal,
-                    itemCount: highlightItems.length,
-                    itemBuilder:
-                ),
-              )
+              // Container(
+              //   height: 85,
+              //   child: ListView.builder(
+              //       shrinkWrap: true,
+              //       scrollDirection: Axis.horizontal,
+              //       itemCount: highlightItems.length,
+              //       itemBuilder:
+              //   ),
+              // )
             ],
           ),
       )
@@ -131,7 +131,12 @@ Widget actions(BuildContext context) {
     children: [
       Expanded(
           child: OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => AddFoodPhotoScreen())
+                );
+              },
               style: OutlinedButton.styleFrom(
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                 minimumSize: Size(0, 30),
@@ -141,7 +146,7 @@ Widget actions(BuildContext context) {
               ),
               child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50),
-                  child: Text("Edit profile", style: TextStyle(color: Colors.black)),
+                  child: Text("Add food", style: TextStyle(color: Colors.black)),
               ),
           ),
       )

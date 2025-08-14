@@ -1,4 +1,5 @@
 import 'package:cookdie/recipe_repo/add_recipe_screen.dart';
+import 'package:cookdie/restaurant_repo/add_food_photo_screen.dart';
 import 'package:cookdie/restaurant_repo/restaurant_home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const AddRecipeScreen(),
-      home: const RestaurantHomeScreen(),
+      home: const AddFoodPhotoScreen(),
     );
   }
 }

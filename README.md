@@ -19,7 +19,11 @@ samples, guidance on mobile development, and a full API reference.
 #### Recipe
 #### Tipmoney
  - CRUD restaurants
- - Take restaurant food picture
+ - Take restaurant food picture, 2 ways:
+   - Click "add food" in restaurant profile page
+   - Click quick "add food/photo" button
+     - Should redirect to a page to choose restaurant first? Or just add picture first then choose restaurant?
+       - In either case, should sort restaurant by distance 
  - Search restaurant by location, collection, name
  - Search pictures/restaurants by food name 
  - Upload pictures to instagram
@@ -27,3 +31,5 @@ samples, guidance on mobile development, and a full API reference.
 
 #### Restaurant home screen tutorial 
 - home page: https://github.com/indjec/Flutter-Instagram-Profile-UI-Clone/blob/master/lib/screens/profile_base_screen.dart
+
+[07/24/25]: Created restaurant home page. TODO: Create restaurant data, api 
