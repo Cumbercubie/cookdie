@@ -1,6 +1,7 @@
 import 'package:cookdie/recipe_repo/add_recipe_screen.dart';
 import 'package:cookdie/restaurant_repo/add_food_photo_screen.dart';
 import 'package:cookdie/restaurant_repo/restaurant_home_screen.dart';
+import 'package:cookdie/winteros/winteros_home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const AddRecipeScreen(),
-      home: const AddFoodPhotoScreen(),
+      // home: const AddFoodPhotoScreen(),
+      home: const WinterosHomeScreen(),
     );
   }
 }

@@ -28,6 +28,10 @@ samples, guidance on mobile development, and a full API reference.
  - Search pictures/restaurants by food name 
  - Upload pictures to instagram
  - Sync instagram pictures
+####  Home 
+ - Parking note:
+   - Floor number: scroll to select
+   - Direction: Left, Right, swipeable
 
 #### Restaurant home screen tutorial 
 - home page: https://github.com/indjec/Flutter-Instagram-Profile-UI-Clone/blob/master/lib/screens/profile_base_screen.dart
